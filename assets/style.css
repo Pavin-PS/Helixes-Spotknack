@@ -16,7 +16,7 @@ footer{
     padding: 5vw;
     width: 100vw;
     display: flex;
-    
+    justify-content: space-between;
 }
 a{
     text-decoration: none;
