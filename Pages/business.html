@@ -57,6 +57,52 @@
       tr{
         border-bottom: 1px solid gray;
       }
+      .ring{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
+        min-height: 100%;
+      }
+      .box{
+        margin-top: -40vw;
+        position: relative;
+        width: 50%;
+        height: 50%;
+        transform-style: preserve-3d;
+        animation: animate 20s linear infinite;
+      }
+
+      @keyframes animate {
+        0%{
+          transform: perspective(1000px) rotateY(0deg);
+        }
+        100%{
+          transform: perspective(1000px) rotateY(360deg);
+        }
+      }
+
+      .box span{
+        position: absolute;
+        top: 0;
+        
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateY(calc(var(--i)*45deg)) translateZ(20vw) translateX(10vw) translateY(20vw);
+        
+      }
+      .box span img{
+        width: 30%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+
     </style>
 </head>
 <body>
@@ -89,7 +135,19 @@
                   Our mission is to continue to create businesses that advance brands and society in order to create new values, sensations, and passion that we have never felt before.
                 </p>
             </div>
-            
+            <div class="ring">
+              <div class="box">
+                <span style="--i:1"><img src="../assets/Images/img1.jpg" alt=""></span>
+                <span style="--i:2"><img src="../assets/Images/img2.jpg" alt=""></span>
+                <span style="--i:3"><img src="../assets/Images/img3.jpg" alt=""></span>
+                <span style="--i:4"><img src="../assets/Images/maxilla.png" alt=""></span>
+                <span style="--i:5"><img src="../assets/Images/verse.png" alt=""></span>
+                <span style="--i:6"><img src="../assets/Images/go_forward.jpg" alt=""></span>
+                <span style="--i:7"><img src="../assets/Images/meqri.png" alt=""></span>
+                <span style="--i:8"><img src="../assets/Images/img4.jpg_large" alt=""></span>
+                <span style="--i:8"><img src="../assets/Images/img5.jpg_large" alt=""></span>
+              </div>
+            </div>
                 
         </div>
 
