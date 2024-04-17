@@ -22,7 +22,7 @@
       .banner{
         margin: 0;
         padding: 0;
-        width: 100vw;
+        width: 100%;
         background: url("assets/Images/helix_pc.webm");
       }
       a{
@@ -61,13 +61,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 60vw;
+        width: 100vw;
         min-height: 100%;
+        
       }
       .box{
         margin-top: -50vw;
         position: relative;
-        width: 100%;
+        width: 60%;
         height: 100%;
         transform-style: preserve-3d;
         animation: animate 20s linear infinite;
@@ -86,20 +87,24 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
+        width: 60%;
+        height: 60%;
         transform-origin: center;
         transform-style: preserve-3d;
-        transform: rotateY(calc(var(--i)*22.5deg)) translateZ(25vw) translateX(25vw) translateY(25vw);        
+        transform: rotateY(calc(var(--i)*22.5deg)) translateZ(18vw) translateX(15vw) translateY(25vw);        
       }
       .box span img{
-        width: 15%;
+        width: 25%;
         position: absolute;
-        height: 25%;
+        height: 35%;
         top: 0;
         left: 0;
         border-radius: 10px;
         object-fit: cover;
+      }
+
+      @media only screen and (max-width: 700px) {
+        
       }
 
     </style>
@@ -110,10 +115,10 @@
           <a href="../index.html"><img src="../assets/Images/Logo.svg" alt=""></a>
           <div style="display: flex; justify-content: space-evenly; width: 40%; height: 2%; font-size: 1.1vw;">
 
-            <a href="../Pages/business.html" style="text-decoration: none; color: black;">Business</a>
-            <a href="../Pages/about.html" style="text-decoration: none; color: black;">Company</a>
-            <a href="" style="text-decoration: none; color: black;">Recruit</a>
-            <a href="" style="text-decoration: none; color: black;">Contact</a>
+            <a class="b1" href="../Pages/business.html" style="text-decoration: none; color: black;">Business</a>
+            <a class="b1" href="../Pages/about.html" style="text-decoration: none; color: black;">Company</a>
+            <a class="b1" href="" style="text-decoration: none; color: black;">Recruit</a>
+            <a class="b1" href="" style="text-decoration: none; color: black;">Contact</a>
             <button style="border-radius: 20px; width: 3vw; background-color: none; border: 1px solid black;">
               JA
             </button>
@@ -128,8 +133,8 @@
         <div class="line">
             <h1 style="color: #FF4E50; margin-top: 10vw;">Business</h1>
         </div>
-        <div style="width: 90vw; display: flex; justify-content: space-between; margin-left: 5vw; margin-top: 6vw;">
-            <div style="margin-top: 5vw; width: 30vw;">
+        <div class="c1" style="width: 90vw; display: flex; justify-content: space-between; margin-left: 5vw; margin-top: 6vw;">
+            <div style="margin-top: 5vw; width: 40%;">
                 <p style="font-weight: 400; font-size: 2.4vw; ">
                   Helixes Inc. pursue the unknown.
                 </p>
