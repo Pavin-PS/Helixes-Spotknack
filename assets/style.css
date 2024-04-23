@@ -56,7 +56,5 @@ p{
     display: flex;
     flex-direction: column;
    }
-   p{
-    font-size: 5vw;
-   }
+   
   }
