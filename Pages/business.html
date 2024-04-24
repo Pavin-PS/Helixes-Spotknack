@@ -92,7 +92,7 @@
         height: 60%;
         transform-origin: center;
         transform-style: preserve-3d;
-        transform: rotateY(calc(var(--i)*22.5deg)) translateZ(18vw) translateX(15vw) translateY(25vw);        
+        transform: rotateY(calc(var(--i)*22.5deg)) translateZ(18vw) translateX(15vw) translateY(30vw);        
       }
       .box span img{
         width: 25%;
@@ -103,9 +103,21 @@
         border-radius: 10px;
         object-fit: cover;
       }
+      .bb1{
+        transition: 0.5s;
+      }
+      .bb1:hover, .bb1 a p:hover{
+        background-color: #FF4E50;
+        color: white;
+        padding:0px 4px;
+      }
 
       @media only screen and (max-width: 700px) {
-        
+        .line1{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+        }
       }
 
     </style>
@@ -132,7 +144,7 @@
         </div>
 
         <div class="line">
-            <h1 style="color: #FF4E50; margin-top: 10vw;">Business</h1>
+            <h1 style="color: #FF4E50; margin-top: 10vw; font-size: 3.8vw;">Business</h1>
         </div>
         <div class="c1" style="width: 90vw; display: flex; justify-content: space-between; margin-left: 5vw; margin-top: 6vw;">
             <div style="margin-top: 5vw; width: 40%;">
@@ -179,12 +191,12 @@
               <p>
                 Maxilla is a creative agency/visual production. From strategic planning to music video, we dedicate our souls to design idea through various types of output forms.
               </p><br><br>
-              <div style="width: 100%;">
-                <a style="text-decoration: none; color: black; font-weight: 400; font-size: 40%;"><p>maxilla.jp</p></a>
+              <div class="bb1" style="width: 100%;">
+                <a href="#" style="text-decoration: none; color: black; font-weight: 400; font-size: 40%;"><p>maxilla.jp</p></a>
                 <hr>
               </div>
             </div>
-            <div style="width: 32.5%;">
+            <div style="width: 32.5%; margin-top: 15vw;">
               <img src="../assets/Images/maxilla.png" style="width: 100%;">
             </div>
           </div>
@@ -201,12 +213,12 @@
               <p>
                 MEQRI is a content IP-driven apparel brand by SUPER STUDIO Inc. and Helixes Inc. MEQRI offers ”You got it!” types of product featuring various contentIPs such as manga, anime and games.
               </p><br><br>
-              <div style="width: 100%;">
-                <a style="text-decoration: none; color: black; font-weight: 400; font-size: 40%;"><p>meqri.com</p></a>
+              <div class="bb1" style="width: 100%;">
+                <a href="#" style="text-decoration: none; color: black; font-weight: 400; font-size: 40%;"><p>meqri.com</p></a>
                 <hr>
               </div>
             </div>
-            <div style="width: 32.5%;">
+            <div style="width: 32.5%; margin-top: 15vw;">
               <img src="../assets/Images/meqri.png" style="width: 100%;">
             </div>
           </div>
@@ -223,12 +235,12 @@
               <p>
                 VERSEⁿ is a cross-media project by Sony Music Labels and Helixes Inc. that develop diverse contents, such as live-streaming, anime, music, illustrations, novels, manga. The project travels through a variety of stories, spinning the past, present and future in the world of VERSEⁿ together with its users.
               </p><br><br>
-              <div style="width: 100%;">
-                <a style="text-decoration: none; color: black; font-weight: 400; font-size: 40%;"><p>verse-n.com</p></a>
+              <div class="bb1" style="width: 100%;">
+                <a href="#" style="text-decoration: none; color: black; font-weight: 400; font-size: 40%;"><p>verse-n.com</p></a>
                 <hr>
               </div>
             </div>
-            <div style="width: 32.5%;">
+            <div style="width: 32.5%; margin-top: 15vw;">
               <img src="../assets/Images/verse.png" style="width: 100%;">
             </div>
           </div>
